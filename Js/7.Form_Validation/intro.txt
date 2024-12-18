@@ -1,0 +1,15 @@
+Fields:
+
+Name (required).
+Email (required and must match a valid format).
+Password (required and must meet strength criteria).
+Validation:
+
+Name: Cannot be empty.
+Email: Must match a regex pattern for valid email format.
+Password: Must be at least 8 characters, including a number, uppercase letter, and special character.
+Steps:
+
+HTML: Structure the form.
+CSS: Add styling for a clean and user-friendly interface.
+JavaScript: Validate fields in real time.

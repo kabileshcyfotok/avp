@@ -1,0 +1,10 @@
+Adding Elements Dynamically in JavaScript
+Key Methods
+document.createElement('tag'):
+
+Creates a new element dynamically.
+Example: const newElement = document.createElement('li');
+parent.appendChild(child):
+
+Appends a newly created element (child) to a specified parent element.
+Example: list.appendChild(newItem);

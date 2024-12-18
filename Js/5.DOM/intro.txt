@@ -1,0 +1,60 @@
+What is the DOM?
+    The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a hierarchical tree of objects. Each part of the webpage—HTML elements, attributes, text, etc.—is represented as a node in the tree, enabling programs like JavaScript to manipulate the content, structure, and styling of the document dynamically.
+
+Key Features of the DOM
+Tree Structure:
+
+The DOM represents the HTML document as a tree where:
+The root node is the <html> tag.
+Child nodes are nested tags like <head>, <body>, etc.
+Live Representation:
+
+The DOM reflects real-time changes. If you add, delete, or modify elements using JavaScript, the DOM updates instantly.
+Cross-Language Compatibility:
+
+Though commonly used with JavaScript, the DOM can be accessed by other programming languages, like Python (e.g., with libraries such as BeautifulSoup).
+Object-Oriented:
+
+Every HTML element, attribute, or piece of text is represented as an object with methods and properties that allow manipulation.
+
+
+
+What is the DOM?
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a hierarchical tree of objects. Each part of the webpage—HTML elements, attributes, text, etc.—is represented as a node in the tree, enabling programs like JavaScript to manipulate the content, structure, and styling of the document dynamically.
+
+Key Features of the DOM
+Tree Structure:
+
+The DOM represents the HTML document as a tree where:
+The root node is the <html> tag.
+Child nodes are nested tags like <head>, <body>, etc.
+Live Representation:
+
+The DOM reflects real-time changes. If you add, delete, or modify elements using JavaScript, the DOM updates instantly.
+Cross-Language Compatibility:
+
+Though commonly used with JavaScript, the DOM can be accessed by other programming languages, like Python (e.g., with libraries such as BeautifulSoup).
+Object-Oriented:
+
+Every HTML element, attribute, or piece of text is represented as an object with methods and properties that allow manipulation.
+Purpose of the DOM
+The DOM allows JavaScript (or other scripts) to:
+
+Read the structure and content of a webpage.
+Modify the webpage's content, structure, and styling dynamically.
+React to user actions (like clicks, typing, or scrolling).
+Add Interactivity by enabling dynamic updates without reloading the page.
+
+
+1. Selectors
+document.getElementById('id'): Selects an element by its id.
+document.querySelector('.class'): Selects the first element matching a CSS selector (e.g., .class, #id, tag).
+document.querySelectorAll('tag'): Selects all elements matching a CSS selector, returns a NodeList (iterable).
+
+
+Modifying Elements
+1. Change Content
+element.textContent: Updates the text content of an element (plain text only).
+element.innerHTML: Updates the HTML content of an element (can include HTML tags).
+2. Change Style
+element.style.property: Modifies the CSS style property of an element.

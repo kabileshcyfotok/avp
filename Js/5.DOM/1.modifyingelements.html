@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Selection and Modification</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="mainTitle">Welcome to My Page</h1>
+    <!-- <p class="description">This is a simple example.</p>
+    <p class="description">Learn how to select and modify DOM elements.</p>
+    <button id="changeButton">Change Content</button> -->
+
+    <script>
+      // Selectors
+      const title = document.getElementById("mainTitle"); // Select by ID
+      const firstParagraph = document.querySelector(".description"); // Select first matching class
+      const allParagraphs = document.querySelectorAll(".description"); // Select all matching class
+
+      // Modifying Content
+      title.textContent = "Hello, DOM Manipulation!"; // Change text
+      firstParagraph.innerHTML =
+        "This content <strong>has been modified!</strong>"; // Change HTML
+
+      // Modifying Style
+      // title.style.color = "blue"; // Change text color
+      // firstParagraph.style.fontSize = "18px"; // Change font size
+
+      // Iterating through NodeList
+      // allParagraphs.forEach((paragraph, index) => {
+      //   paragraph.style.border = "1px solid black"; // Add border
+      //   paragraph.textContent += ` (Paragraph ${index + 1})`; // Append index
+      // });
+
+      // Add interactivity
+      // const button = document.getElementById("changeButton");
+      // button.addEventListener("click", () => {
+      //   title.textContent = "Content Changed with Button Click!";
+      //   title.classList.add("highlight"); // Add class for styling
+      // });
+    </script>
+  </body>
+</html>

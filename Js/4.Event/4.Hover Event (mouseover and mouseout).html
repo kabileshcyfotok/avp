@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="hoverBox"
+      style="
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+      "
+    >
+      Hover Over Me
+    </div>
+    <p id="hoverOutput"></p>
+    <script>
+      const hoverBox = document.getElementById("hoverBox");
+      const hoverOutput = document.getElementById("hoverOutput");
+
+      hoverBox.addEventListener("mouseover", () => {
+        hoverBox.style.backgroundColor = "lightgreen";
+        hoverOutput.textContent = "Mouse is hovering!";
+      });
+
+      hoverBox.addEventListener("mouseout", () => {
+        hoverBox.style.backgroundColor = "lightblue";
+        hoverOutput.textContent = "Mouse left the box!";
+      });
+    </script>
+  </body>
+</html>

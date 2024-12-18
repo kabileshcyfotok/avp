@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" placeholder="Enter your name" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formOutput"></p>
+    <script>
+      const form = document.getElementById("myForm");
+      const formOutput = document.getElementById("formOutput");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent form from reloading the page
+        formOutput.textContent = "Form submitted successfully!";
+      });
+    </script>
+  </body>
+</html>

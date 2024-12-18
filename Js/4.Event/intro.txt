@@ -1,0 +1,10 @@
+What Are Events?
+Events in JavaScript represent user actions or occurrences, such as clicking a button, typing into a text field, scrolling a page, etc. These events can trigger JavaScript functions to make web pages interactive.
+
+Syntax for Adding Event Listeners
+
+"element.addEventListener('event', function);"
+
+    -element: The DOM element to attach the event listener to.
+    -event: The type of event (e.g., click, input, submit, mouseover).
+    -function: The function to execute when the event occurs.

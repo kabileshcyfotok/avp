@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Empty Field</title>
+  </head>
+  <body>
+    <form id="emptyCheckForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <div id="nameError" style="color: red"></div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("emptyCheckForm");
+      const nameInput = document.getElementById("name");
+      const nameError = document.getElementById("nameError");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (nameInput.value.trim() === "") {
+          nameError.textContent = "This field cannot be empty!";
+        } else {
+          nameError.textContent = "";
+          alert("Form submitted successfully!");
+        }
+      });
+    </script>
+  </body>
+</html>
